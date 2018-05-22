@@ -1,0 +1,2355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+File Format is 
+ 
+(0)UserID: the id of the user. 
+ 
+(1)Inputting_Finger: input posture. i - index finger, t - one thumb, tt - two thumbs. Participants were instructed to choose the most comfortable postures in the study. 
+ 
+(2)KeyboardType: invisible tap keyboard (invisible_tap), semi-invisible tap keyboard (semi_invisible_tap_adjusted or semi_invisible_tap_unadjusted), invisible gesture keyboard (invisible_gesture), tv keyboard with reference (tv_ref) or tv keyboard without reference (tv_no_ref). 
+ 
+(3)TaskType: phrase input: T-20(0), T-40(1), T-80(2), T-160(3), phrase-M-S(4), phrase-M-S-rep(5) or word repetition(6). 
+ 
+(4)IsGestureExpert: 0-not an expert in gesture input, 1-an expert in gesture input. 
+ 
+(5)Device Name. 
+ 
+(6)InputMode: 0 - gesture, 1 - typing with space. 
+ 
+(7)Trial Information: 
+ 
+ (i)BlockNum: Block number in the study. Block-0 is the warm-up session. The data in this session should be removed. 
+ 
+ (ii)TrialNum: Trial Number. For phrase repetition: (iii)RepNum. 
+ 
+ (iii)Stimulus: presented phrase. 
+ 
+ (iv)IME data: retrieved from IME via private command, contains list of TouchPoints (x, y, pointer_ids, time), startTime, TypedWord (literal string of tap input), list of Suggestions, and CommittedWord. 
+ Note that for gesture input, startTime is the (down event) time of the first point in the gesture stroke, and time array lists the time difference from startTime. pointCount is the total number of touch points in the current gesture stroke. 
+ For tap input, startTime is the (down event) time of the current touch point, i.e., time[pointCount - 1] = startTime. pointCount is the total number of taps received so far for the current word. 
+ 
+(v)isCanceled: if isCanceled==1, discard this trial data. 
+ 
+(vi)editTextContent: the submitted string for the current trial. 
+-->
+<root>
+<user>42003</user>
+<inputFinger>two thumbs</inputFinger>
+<keyboardType>default keyboard</keyboardType>
+<taskType>1</taskType>
+<gestureExpert>0</gestureExpert>
+<device>LGE AOSP on BullHead</device>
+<inputMode>Tap Input</inputMode>
+<trial>
+	<blockNum>3</blockNum>
+	<trialNum>33</trialNum>
+	<stimulus>sent this by registered mail</stimulus>
+	<imeData>
+		<suggestions>[I, the, hi, if, we, it, thank, please, you, this, I'm, thanks, dear, my, and, so, a, location]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[192]</x>
+			<y>[260]</y>
+			<pointer>[0]</pointer>
+			<startTime>273964749</startTime>
+			<time>[0]</time>
+			<typedWord>s</typedWord>
+			<currentOutput>s</currentOutput>
+		</touchPoints>
+		<suggestions>[s, a, so, she, send, sent, see, sorry, I, and, as, is, some, all, also, sad, stability, are]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[192, 261]</x>
+			<y>[260, 110]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273964981</startTime>
+			<time>[0, 0]</time>
+			<typedWord>se</typedWord>
+			<currentOutput>se</currentOutput>
+		</touchPoints>
+		<suggestions>[se, SE, send, sent, see, as, she, we, are, so, use, SW, he, SR, de, re, a, be, aw]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[192, 261, 743]</x>
+			<y>[260, 110, 470]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273965156</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>sen</typedWord>
+			<currentOutput>sen</currentOutput>
+		</touchPoints>
+		<suggestions>[sen, send, sent, senior, see, sense, Sean, sensor, den, sending, and, sender, seen, sensitive, set, Zen, senator, sentence]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[192, 261, 743, 499]</x>
+			<y>[260, 110, 470, 128]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273965371</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>sent</typedWord>
+			<currentOutput>sent</currentOutput>
+		</touchPoints>
+		<suggestions>[sent, send, want, spent, went, set, sentence, sentry, any, dent, sentences, agent, debt, dear, seat, deny, sentiment, scent]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>sent</committedWords>
+		<suggestions>[from, via, by, on, to, you, me, with, this, the, it, using, a, out, in, an, them, my]</suggestions>
+		<suggestions>[t, to, by, this, the, you, it, them, through, that, today, your, these, at, two, my, a, yesterday, their]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[516]</x>
+			<y>[120]</y>
+			<pointer>[0]</pointer>
+			<startTime>273966052</startTime>
+			<time>[0]</time>
+			<typedWord>t</typedWord>
+			<currentOutput>sent t</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[516, 669]</x>
+			<y>[120, 300]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273966200</startTime>
+			<time>[0, 0]</time>
+			<typedWord>th</typedWord>
+			<currentOutput>sent th</currentOutput>
+		</touchPoints>
+		<suggestions>[th, this, the, them, by, to, through, that, these, their, there, those, on, TB, in, an, TN, TV, GB]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[516, 669, 816, 217]</x>
+			<y>[120, 300, 115, 300]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273966458</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>this</typedWord>
+			<currentOutput>sent this</currentOutput>
+		</touchPoints>
+		<suggestions>[this, thus, those, third, thks, thistle, thin, Ghia, Thai, this'll, Thurs, Thais, thins, thud, tho, thistles, tis, Thu]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>this</committedWords>
+		<suggestions>[to, email, message, is, morning, out, from, on, mail, over, last, yesterday, earlier, before, week, by, through, already]</suggestions>
+		<suggestions>[b, before, by, back, but, on, be, new, in, I, a, an, MB, KB, GB, JB, lb, TB, SB]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[667]</x>
+			<y>[441]</y>
+			<pointer>[0]</pointer>
+			<startTime>273967430</startTime>
+			<time>[0]</time>
+			<typedWord>b</typedWord>
+			<currentOutput>sent this b</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[667, 639]</x>
+			<y>[441, 88]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273967744</startTime>
+			<time>[0, 0]</time>
+			<typedWord>by</typedWord>
+			<currentOutput>sent this by</currentOutput>
+		</touchPoints>
+		<suggestions>[by, but, build, business, NY, bug, building, number, button, be, bus, buy, busy, boy, buyer, built, buying, bunch]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>by</committedWords>
+		<suggestions>[searching, visiting, the, using, you, mistake, tomorrow, now, saying, accident, going, adding, a, registered, Gmail, email, this, my]</suggestions>
+		<suggestions>[r, registered, email, return, reply, replying, me, a, end, or, Mr, Dr, be, dr, we, he, I, it, de]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[342]</x>
+			<y>[103]</y>
+			<pointer>[0]</pointer>
+			<startTime>273968243</startTime>
+			<time>[0]</time>
+			<typedWord>r</typedWord>
+			<currentOutput>sent this by r</currentOutput>
+		</touchPoints>
+		<suggestions>[re, registered, return, reply, replying, the, are, Dr, me, de, her, dr, RR, EE, see, ear, we, Lee]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[342, 290]</x>
+			<y>[103, 89]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273968459</startTime>
+			<time>[0, 0]</time>
+			<typedWord>re</typedWord>
+			<currentOutput>sent this by re</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[342, 290, 538]</x>
+			<y>[103, 89, 288]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273969189</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>reg</typedWord>
+			<currentOutput>sent this by reg</currentOutput>
+		</touchPoints>
+		<suggestions>[reg, registered, Rev, regular, regards, registering, the, region, regarding, Greg, ref, registration, register, regularly, reference, rev, regard, referring]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[342, 290, 538, 838]</x>
+			<y>[103, 89, 288, 102]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273969347</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>regi</typedWord>
+			<currentOutput>sent this by regi</currentOutput>
+		</touchPoints>
+		<suggestions>[regi, registered, registering, region, registration, register, regional, review, registry, reviewing, regions, Regina, reviews, registers, registrar, regime, ergo, revised, registrations]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[342, 290, 538, 838, 173]</x>
+			<y>[103, 89, 288, 102, 271]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>273969537</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>regis</typedWord>
+			<currentOutput>sent this by regis</currentOutput>
+		</touchPoints>
+		<suggestions>[regis, registered, Regis, registering, registration, register, registry, regia, registers, registrar, revised, registrations, Regina, revision, revise, revisions, registrar's, registrants, registries]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[342, 290, 538, 838, 173, 487]</x>
+			<y>[103, 89, 288, 102, 271, 133]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273970004</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>regist</typedWord>
+			<currentOutput>sent this by regist</currentOutput>
+		</touchPoints>
+		<suggestions>[regist, registered, registering, registration, register, registry, registers, registrar, registrations, registrar's, registrants, registries, registrant, regular, resist, revisit, registrars, Regis, repost]</suggestions>
+		<suggestions>[registe, registered, registering, register, registration, registers, registry, registrar, registrations, registrar's, deviate, registrants, registries, Reigate, registrant, registerable, revise, register's, regulate]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[342, 290, 538, 838, 173, 487, 273]</x>
+			<y>[103, 89, 288, 102, 271, 133, 116]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273970211</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>registe</typedWord>
+			<currentOutput>sent this by registe</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[342, 290, 538, 838, 173, 487, 273, 361]</x>
+			<y>[103, 89, 288, 102, 271, 133, 116, 78]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273970452</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>register</typedWord>
+			<currentOutput>sent this by register</currentOutput>
+		</touchPoints>
+		<suggestions>[register, registered, registering, registers, registrar, registration, registry, registerable, register's, resister, registrations, revised, registrar's, registrants, registries, revisited, registrant, deviated]</suggestions>
+		<touchPoints>
+			<pointCount>9</pointCount>
+			<x>[342, 290, 538, 838, 173, 487, 273, 361, 229]</x>
+			<y>[103, 89, 288, 102, 271, 133, 116, 78, 93]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273970783</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>registere</typedWord>
+			<currentOutput>sent this by registere</currentOutput>
+		</touchPoints>
+		<suggestions>[registere, registered, registers, register, registering, register's, register a, registrar's, registrar, registrars, resisters, registries, registerable, register s]</suggestions>
+		<touchPoints>
+			<pointCount>10</pointCount>
+			<x>[342, 290, 538, 838, 173, 487, 273, 361, 229, 277]</x>
+			<y>[103, 89, 288, 102, 271, 133, 116, 78, 93, 252]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273971090</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>registered</typedWord>
+			<currentOutput>sent this by registered</currentOutput>
+		</touchPoints>
+		<suggestions>[registered, registers, registerable]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>registered</committedWords>
+		<suggestions>[post, mail, user, in, for, with, trademarks, member, and, at, office, to, on, users, as, charity, company, the]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[279]</x>
+			<y>[131]</y>
+			<pointer>[0]</pointer>
+			<startTime>273971988</startTime>
+			<time>[0]</time>
+			<typedWord>e</typedWord>
+			<currentOutput>sent this by registered e</currentOutput>
+		</touchPoints>
+		<suggestions>[e, email, be, we, me, envelope, as, dietitian, I, even, he, each, end, every, etc, everything, a, either, error]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[279, 847]</x>
+			<y>[131, 484]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273972136</startTime>
+			<time>[0, 0]</time>
+			<typedWord>em</typedWord>
+			<currentOutput>sent this by registered em</currentOutput>
+		</touchPoints>
+		<suggestions>[em, email, me, in, en, on, envelope, emails, RM, end, am, enough, engine, emailed, empty, DM, employee, SM]</suggestions>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[279]</x>
+			<y>[131]</y>
+			<pointer>[0]</pointer>
+			<startTime>273972661</startTime>
+			<time>[0]</time>
+			<typedWord>e</typedWord>
+			<currentOutput>sent this by registered e</currentOutput>
+		</touchPoints>
+		<suggestions>[e, email, be, we, me, envelope, as, dietitian, I, even, he, each, end, every, etc, everything, a, either, error]</suggestions>
+		<functionKey>delete</functionKey>
+		<suggestions>[post, mail, user, in, for, with, trademarks, member, and, at, office, to, on, users, as, charity, company, the]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[858]</x>
+			<y>[447]</y>
+			<pointer>[0]</pointer>
+			<startTime>273973641</startTime>
+			<time>[0]</time>
+			<typedWord>m</typedWord>
+			<currentOutput>sent this by registered m</currentOutput>
+		</touchPoints>
+		<suggestions>[m, mail, member, my, members, in, mobile, migration, on, myself, nurse, number, Mobile, massage, new, am, name, machine, I]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[858, 93]</x>
+			<y>[447, 283]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273973770</startTime>
+			<time>[0, 0]</time>
+			<typedWord>ma</typedWord>
+			<currentOutput>sent this by registered ma</currentOutput>
+		</touchPoints>
+		<suggestions>[ma, mail, MA, massage, am, machine, my, Ms, an, me, ms, Na, as, is, MBA, no, Mr, CA]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[858, 93, 975]</x>
+			<y>[447, 283, 272]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273973895</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>mal</typedWord>
+			<currentOutput>sent this by registered mal</currentOutput>
+		</touchPoints>
+		<suggestions>[mal, mail, Mal, make, male, email, Malaysia, may, making, makes, malware, mall, meal, man, males, Malcolm, Malta, malicious]</suggestions>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[858, 93]</x>
+			<y>[447, 283]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273974651</startTime>
+			<time>[0, 0]</time>
+			<typedWord>ma</typedWord>
+			<currentOutput>sent this by registered ma</currentOutput>
+		</touchPoints>
+		<suggestions>[ma, mail, MA, massage, am, machine, my, Ms, an, me, ms, Na, as, is, MBA, no, Mr, CA]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[858, 93, 815]</x>
+			<y>[447, 283, 113]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273974950</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>mai</typedWord>
+			<currentOutput>sent this by registered mai</currentOutput>
+		</touchPoints>
+		<suggestions>[mai, mail, main, maintenance, mailing, make, mainly, MSI, may, maintain, mailed, Maine, mailbox, mails, maintained, maintaining, Mao, making, makes]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[858, 93, 815, 963]</x>
+			<y>[447, 283, 113, 250]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273975115</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>mail</typedWord>
+			<currentOutput>sent this by registered mail</currentOutput>
+		</touchPoints>
+		<suggestions>[mail, email, nail, mailing, Gmail, mailed, mailbox, mails, E-mail, main, e-mail, mailer, fail, mailers, mailings, mailboxes, Naik, nails]</suggestions>
+	</imeData>
+	<isCanceled>0</isCanceled>
+	<editTextContent>sent this by registered mail</editTextContent>
+	<submitTime>273976497</submitTime>
+</trial>
+<trial>
+	<blockNum>3</blockNum>
+	<trialNum>34</trialNum>
+	<stimulus>companies announce a merger</stimulus>
+	<imeData>
+		<suggestions>[I, the, hi, if, we, it, thank, please, you, this, I'm, thanks, dear, my, and, so, a, location]</suggestions>
+		<suggestions>[c, can, I, could, call, communicate, completely, companies, Chris, complement, complete, close, completed, a, circumstances, company's, cw, visit, very]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[424]</x>
+			<y>[455]</y>
+			<pointer>[0]</pointer>
+			<startTime>273979160</startTime>
+			<time>[0]</time>
+			<typedWord>c</typedWord>
+			<currentOutput>c</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[424, 921]</x>
+			<y>[455, 138]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273979417</startTime>
+			<time>[0, 0]</time>
+			<typedWord>co</typedWord>
+			<currentOutput>co</currentOutput>
+		</touchPoints>
+		<suggestions>[co, CO, could, communicate, completely, companies, complement, complete, completed, so, company's, do, no, to, hi, CL, CP, go]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[424, 921, 864]</x>
+			<y>[455, 138, 433]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273979682</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>com</typedWord>
+			<currentOutput>com</currentOutput>
+		</touchPoints>
+		<suggestions>[com, communicate, completely, companies, complement, complete, completed, company's, con, can, Tom, von, mom, CPM, cam, cm, Mom, icon]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[424, 921, 864, 1026]</x>
+			<y>[455, 138, 433, 87]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273979938</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>comp</typedWord>
+			<currentOutput>comp</currentOutput>
+		</touchPoints>
+		<suggestions>[comp, completely, companies, complement, complete, completed, company's, como, come, com, Como, camp, combo, clamp, Cosmo, cop, Corp, chimp]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[424, 921, 864, 1026, 73]</x>
+			<y>[455, 138, 433, 87, 292]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>273980113</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>compa</typedWord>
+			<currentOutput>compa</currentOutput>
+		</touchPoints>
+		<suggestions>[compa, companies, company's, company, compare, compared, compatible, compatibility, comparison, compact, comparing, Compaq, compass, comparable, companion, compartment, comps, compassion, comparisons]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[424, 921, 864, 1026, 73, 765]</x>
+			<y>[455, 138, 433, 87, 292, 435]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273980554</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>compan</typedWord>
+			<currentOutput>compan</currentOutput>
+		</touchPoints>
+		<suggestions>[compan, companies, company's, company, companion, companions, companionship, Compaq, companionway, companionships, companionable, companied, companionate, companioning, companionways, companionless, companionably, companioned, compos]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[424, 921, 864, 1026, 73, 765, 824]</x>
+			<y>[455, 138, 433, 87, 292, 435, 128]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273980778</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>compani</typedWord>
+			<currentOutput>compani</currentOutput>
+		</touchPoints>
+		<suggestions>[compani, companies, companion, company, companions, companionship, company's, companionway, companionships, companionable, companied, companionate, companioning, companionways, pompano, companionless, companionably, companioned]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[424, 921, 864, 1026, 73, 765, 824, 325]</x>
+			<y>[455, 138, 433, 87, 292, 435, 128, 94]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273981068</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>companir</typedWord>
+			<currentOutput>companir</currentOutput>
+		</touchPoints>
+		<suggestions>[companir, companies, company's, companied, companion, companions, companionship, companionway, companionships, companionable, companionate, companioning, companionways, companionless, companionably, companioned]</suggestions>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[424, 921, 864, 1026, 73, 765, 824]</x>
+			<y>[455, 138, 433, 87, 292, 435, 128]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273981730</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>compani</typedWord>
+			<currentOutput>compani</currentOutput>
+		</touchPoints>
+		<suggestions>[compani, companies, companion, company, companions, companionship, company's, companionway, companionships, companionable, companied, companionate, companioning, companionways, pompano, companionless, companionably, companioned]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[424, 921, 864, 1026, 73, 765, 824, 257]</x>
+			<y>[455, 138, 433, 87, 292, 435, 128, 111]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273982258</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>companie</typedWord>
+			<currentOutput>companie</currentOutput>
+		</touchPoints>
+		<suggestions>[companie, companies, company's, companied, companion, companions, companionship, companionway, companionships, companionable, companionate, companioning, companionways, companionless, companionably, companioned]</suggestions>
+		<suggestions>[companies, companied]</suggestions>
+		<touchPoints>
+			<pointCount>9</pointCount>
+			<x>[424, 921, 864, 1026, 73, 765, 824, 257, 217]</x>
+			<y>[455, 138, 433, 87, 292, 435, 128, 111, 267]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273982454</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>companies</typedWord>
+			<currentOutput>companies</currentOutput>
+		</touchPoints>
+		<functionKey>space</functionKey>
+		<committedWords>companies</committedWords>
+		<suggestions>[and, that, in, are, to, like, whose, have, announce, for, I, with, as, who, can, will, do, such]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[76]</x>
+			<y>[239]</y>
+			<pointer>[0]</pointer>
+			<startTime>273983476</startTime>
+			<time>[0]</time>
+			<typedWord>a</typedWord>
+			<currentOutput>companies a</currentOutput>
+		</touchPoints>
+		<suggestions>[a, and, are, announce, as, also, about, around, across, away, Adobe, I, such, so, is, switched, shall, some]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[76, 770]</x>
+			<y>[239, 453]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273983890</startTime>
+			<time>[0, 0]</time>
+			<typedWord>an</typedWord>
+			<currentOutput>companies an</currentOutput>
+		</touchPoints>
+		<suggestions>[an, and, announce, am, can, in, any, as, anything, another, a, on, anyone, answer, anyway, at, man, Android]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[76, 770, 781]</x>
+			<y>[239, 453, 417]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273984047</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>ann</typedWord>
+			<currentOutput>companies ann</currentOutput>
+		</touchPoints>
+		<suggestions>[ann, Ann, announce, and, an, any, Anna, annual, Anne, annoying, anniversary, am, announcement, man, announced, Annie, announcements, annoyed, Annette]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[76, 770, 781, 939]</x>
+			<y>[239, 453, 417, 89]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273984304</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>anno</typedWord>
+			<currentOutput>companies anno</currentOutput>
+		</touchPoints>
+		<suggestions>[anno, announce, ammo, annoying, announcement, announced, announcements, annoyed, announcing, annoy, anni, and, annoyance, nano, annoys, announces, annotation, annotations]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[76, 770, 781, 939, 705]</x>
+			<y>[239, 453, 417, 89, 100]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>273984520</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>annou</typedWord>
+			<currentOutput>companies annou</currentOutput>
+		</touchPoints>
+		<suggestions>[annou, announce, announcement, announced, announcements, annoy, announcing, annoying, announces, announcer, annoyed, announcers, annoyance, annoys, annoyingly, cannot, annoyances, ammo, anno]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[76, 770, 781, 939, 705, 763]</x>
+			<y>[239, 453, 417, 89, 100, 440]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273984762</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>announ</typedWord>
+			<currentOutput>companies announ</currentOutput>
+		</touchPoints>
+		<suggestions>[announ, announce, announcement, announced, announcements, announcing, announces, announcer, announcers, annoying, announcer's, annum, annoy, annoys, annoyingly, amnion, anonym]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[76, 770, 781, 939, 705, 763, 439]</x>
+			<y>[239, 453, 417, 89, 100, 440, 451]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273984961</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>announc</typedWord>
+			<currentOutput>companies announc</currentOutput>
+		</touchPoints>
+		<suggestions>[announc, announce, announcement, announced, announcements, announcing, announces, announcer, announcers, announcer's, annoyance, annoyances]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[76, 770, 781, 939, 705, 763, 439, 268]</x>
+			<y>[239, 453, 417, 89, 100, 440, 451, 116]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273985251</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>announce</typedWord>
+			<currentOutput>companies announce</currentOutput>
+		</touchPoints>
+		<suggestions>[announce, announcement, announced, announcements, announces, announcer, announcers, annoyance, announcer's, announcing, annoyances]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>announce</committedWords>
+		<suggestions>[that, the, it, a, our, to, this, my, their, you, his, and, its, table, s]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[111]</x>
+			<y>[267]</y>
+			<pointer>[0]</pointer>
+			<startTime>273985765</startTime>
+			<time>[0]</time>
+			<typedWord>a</typedWord>
+			<currentOutput>companies announce a</currentOutput>
+		</touchPoints>
+		<suggestions>[a, s, and, are, at, as, all, about, an, any, am, also, after, avatar, attached, again, around, able]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>a</committedWords>
+		<suggestions>[new, good, few, lot, great, bit, little, merger, couple, problem, very, message, private, nice, quarter, manager, look, long]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[881]</x>
+			<y>[430]</y>
+			<pointer>[0]</pointer>
+			<startTime>273986429</startTime>
+			<time>[0]</time>
+			<typedWord>m</typedWord>
+			<currentOutput>companies announce a m</currentOutput>
+		</touchPoints>
+		<suggestions>[m, new, merger, message, manager, month, more, meeting, man, member, much, moment, nice, number, note, GM, VM, DM, I'm]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[881, 261]</x>
+			<y>[430, 128]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273986637</startTime>
+			<time>[0, 0]</time>
+			<typedWord>me</typedWord>
+			<currentOutput>companies announce a me</currentOutput>
+		</touchPoints>
+		<suggestions>[me, new, merger, message, meeting, member, ms, Ms, Mr, MD, one, MW, BMW, NE, mod, em, my, mid]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[881, 261, 362]</x>
+			<y>[430, 128, 96]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273986877</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>mer</typedWord>
+			<currentOutput>companies announce a mer</currentOutput>
+		</touchPoints>
+		<suggestions>[mer, merger, new, meeting, mere, met, Merry, Mercedes, merry, merchant, meet, med, mermaid, more, Merrill, net, merely, merge]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[881, 261, 362, 534]</x>
+			<y>[430, 128, 96, 311]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273987276</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>merg</typedWord>
+			<currentOutput>companies announce a merg</currentOutput>
+		</touchPoints>
+		<suggestions>[merg, merger, nerf, mere, Merv, merge, Mercedes, meth, merged, meet, merging, mergers, merges, need, Merci, nerd, more, mesh, met]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[881, 261, 362, 534, 240]</x>
+			<y>[430, 128, 96, 311, 83]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>273987516</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>merge</typedWord>
+			<currentOutput>companies announce a merge</currentOutput>
+		</touchPoints>
+		<suggestions>[merge, merger, nerve, mere, Mercedes, merged, mercenary, emerge, merges, mergers, serve, Mercedes-Benz, Marge, Mercer, metre, mercenaries, Merle, verge]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[881, 261, 362, 534, 240, 397]</x>
+			<y>[430, 128, 96, 311, 83, 126]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273987751</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>merger</typedWord>
+			<currentOutput>companies announce a merger</currentOutput>
+		</touchPoints>
+		<suggestions>[merger, merged, server, Mercer, member, mergers, meter, merge, meager, Mercedes, never, nerve, Berger, emerged, nether, merges, served, Mercier]</suggestions>
+	</imeData>
+	<isCanceled>0</isCanceled>
+	<editTextContent>companies announce a merger</editTextContent>
+	<submitTime>273988589</submitTime>
+</trial>
+<trial>
+	<blockNum>3</blockNum>
+	<trialNum>35</trialNum>
+	<stimulus>be discreet about your meeting</stimulus>
+	<imeData>
+		<suggestions>[I, the, hi, if, we, it, thank, please, you, this, I'm, thanks, dear, my, and, so, a, location]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[645]</x>
+			<y>[450]</y>
+			<pointer>[0]</pointer>
+			<startTime>273990989</startTime>
+			<time>[0]</time>
+			<typedWord>b</typedWord>
+			<currentOutput>b</currentOutput>
+		</touchPoints>
+		<suggestions>[b, but, best, I, by, be, Best, no, not, beware, breathing, a, now, in, never, on, an, neither, MB]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[645, 274]</x>
+			<y>[450, 135]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273991302</startTime>
+			<time>[0, 0]</time>
+			<typedWord>be</typedWord>
+			<currentOutput>be</currentOutput>
+		</touchPoints>
+		<suggestions>[be, best, Best, we, beware, he, vs, very, re, by, I've, bs, one, and, bye, as, no, is]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>be</committedWords>
+		<suggestions>[sure, careful, well, safe, aware, a, there, in, the, prepared, good, able, happy, blessed, very, nice, patient, it]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[327]</x>
+			<y>[256]</y>
+			<pointer>[0]</pointer>
+			<startTime>273992000</startTime>
+			<time>[0]</time>
+			<typedWord>d</typedWord>
+			<currentOutput>be d</currentOutput>
+		</touchPoints>
+		<suggestions>[d, discreet, done, discrete, doing, a, fine, forewarned, found, for, of, as, ID, s, if, I'd, I, is, ad]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[327, 808]</x>
+			<y>[256, 108]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273992240</startTime>
+			<time>[0, 0]</time>
+			<typedWord>di</typedWord>
+			<currentOutput>be di</currentOutput>
+		</touchPoints>
+		<suggestions>[di, discreet, discrete, Di, so, do, different, difficult, done, discussed, doing, didn't, directly, did, direct, discussion, difference, si, discuss]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[327, 808, 193]</x>
+			<y>[256, 108, 257]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273992422</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>dis</typedWord>
+			<currentOutput>be dis</currentOutput>
+		</touchPoints>
+		<suggestions>[dis, discreet, discrete, displayed, disappointed, discussed, disabled, did, Di's, discovered, discussion, discuss, di's, display, distribution, disclosure, discount, distance]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[327, 808, 193, 211]</x>
+			<y>[256, 108, 257, 292]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273992854</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>diss</typedWord>
+			<currentOutput>be diss</currentOutput>
+		</touchPoints>
+		<suggestions>[diss, disappointed, disabled, dissolved, disseminated, dissemination, dias, Dias, disseminate, disassembled, disappointing, disable, dissertation, Diaz, discs, miss, disks, dissolve, fuss]</suggestions>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[327, 808, 193]</x>
+			<y>[256, 108, 257]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273993335</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>dis</typedWord>
+			<currentOutput>be dis</currentOutput>
+		</touchPoints>
+		<suggestions>[dis, discreet, discrete, displayed, disappointed, discussed, disabled, did, Di's, discovered, discussion, discuss, di's, display, distribution, disclosure, discount, distance]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[327, 808, 193, 474]</x>
+			<y>[256, 108, 257, 469]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273993551</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>disc</typedWord>
+			<currentOutput>be disc</currentOutput>
+		</touchPoints>
+		<suggestions>[disc, discreet, discrete, discussed, discussing, disconnected, discovered, discussion, discuss, discounted, disclosure, discount, discussions, disclose, discovery, discover, disclaimer, disconnect]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[327, 808, 193, 474, 317]</x>
+			<y>[256, 108, 257, 469, 136]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>273994191</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>disce</typedWord>
+			<currentOutput>be disce</currentOutput>
+		</touchPoints>
+		<suggestions>[disce, discreet, discrete, discs, discretion, discrepancy, discrimination, disc, discrepancies, discern, discerning, discriminate, discernment, discretionary, discredit, discernible, discreetly, Diane, Dave]</suggestions>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[327, 808, 193, 474]</x>
+			<y>[256, 108, 257, 469]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273994730</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>disc</typedWord>
+			<currentOutput>be disc</currentOutput>
+		</touchPoints>
+		<suggestions>[disc, discreet, discrete, discussed, discussing, disconnected, discovered, discussion, discuss, discounted, disclosure, discount, discussions, disclose, discovery, discover, disclaimer, disconnect]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[327, 808, 193, 474, 387, 274]</x>
+			<y>[256, 108, 257, 469, 128, 92]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273995063</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>discre</typedWord>
+			<currentOutput>be discre</currentOutput>
+		</touchPoints>
+		<suggestions>[discre, discreet, discrete, discretion, discrepancy, discrepancies, discretionary, discredit, discreetly, discretely, discredited, discrediting, disrespectful, disregarded, discredits, discrepant, discretions, discreetness, discard]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[327, 808, 193, 474, 387, 274, 293]</x>
+			<y>[256, 108, 257, 469, 128, 92, 103]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273995286</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>discree</typedWord>
+			<currentOutput>be discree</currentOutput>
+		</touchPoints>
+		<suggestions>[discree, discreet, discrete, discreetly, sister, discredit, discreetness, discredited, discrediting, discretely, Fischer, discredits, discard, discreditable, discreteness, disced, fiacres, discards]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[327, 808, 193, 474, 387, 274, 293, 468]</x>
+			<y>[256, 108, 257, 469, 128, 92, 103, 140]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>273995593</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>discreet</typedWord>
+			<currentOutput>be discreet</currentOutput>
+		</touchPoints>
+		<suggestions>[discreet, discrete, discreetly, discreetness, discretely, discarded, discreteness, discarder]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>discreet</committedWords>
+		<suggestions>[as, and, here, fun, about, guy, bi]</suggestions>
+		<suggestions>[a, as, and, about, I, is, CA, s, la, ya, PA, ha, da, GA, VA, us, ma, LA]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[85]</x>
+			<y>[279]</y>
+			<pointer>[0]</pointer>
+			<startTime>273996351</startTime>
+			<time>[0]</time>
+			<typedWord>a</typedWord>
+			<currentOutput>be discreet a</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[85, 621]</x>
+			<y>[279, 440]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273996506</startTime>
+			<time>[0, 0]</time>
+			<typedWord>ab</typedWord>
+			<currentOutput>be discreet ab</currentOutput>
+		</touchPoints>
+		<suggestions>[ab, as, about, and, an, able, a, avatar, above, available, at, any, absolutely, am, ability, can, av, SB]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[85, 621, 937]</x>
+			<y>[279, 440, 117]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273996731</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>abo</typedWord>
+			<currentOutput>be discreet abo</currentOutput>
+		</touchPoints>
+		<suggestions>[abo, about, and, above, able, avoid, ago, aboard, all, avoiding, abortion, an, any, aborted, avoided, abouts, abort, app]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[85, 621, 937, 705]</x>
+			<y>[279, 440, 117, 112]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273996931</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>abou</typedWord>
+			<currentOutput>be discreet abou</currentOutput>
+		</touchPoints>
+		<suggestions>[abou, about, avoid, abouts, able, abound, avoiding, Abu, avoided, abounds, any, a boy, above, abounding, avoids, abounded, avoidance, ably, Avon]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[85, 621, 937, 705, 493]</x>
+			<y>[279, 440, 117, 112, 150]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>273997153</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>about</typedWord>
+			<currentOutput>be discreet about</currentOutput>
+		</touchPoints>
+		<suggestions>[about, abouts, labour, a bout, avoid, favour, snout, abort, as bout, abut, about-face, ablution, ablutions, amour, savour, abound, abounds, arbour]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>about</committedWords>
+		<suggestions>[the, it, this, your, a, that, you, my, to, how, what, our, me, an, them, her, getting, all]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[608]</x>
+			<y>[114]</y>
+			<pointer>[0]</pointer>
+			<startTime>273998142</startTime>
+			<time>[0]</time>
+			<typedWord>y</typedWord>
+			<currentOutput>be discreet about y</currentOutput>
+		</touchPoints>
+		<suggestions>[y, your, you, the, my, this, yourself, that, it, a, to, them, their, these, two, by, those, time, things]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[608, 948]</x>
+			<y>[114, 110]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273998359</startTime>
+			<time>[0, 0]</time>
+			<typedWord>yo</typedWord>
+			<currentOutput>be discreet about yo</currentOutput>
+		</touchPoints>
+		<suggestions>[yo, to, your, you, yourself, up, go, tomorrow, two, it, hi, no, so, HP, who, us, do, UK]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[608, 948, 720]</x>
+			<y>[114, 110, 114]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273998539</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>you</typedWord>
+			<currentOutput>be discreet about you</currentOutput>
+		</touchPoints>
+		<suggestions>[you, your, yourself, to, how, GPU, toy, up, too, yup, hoi, yo, top, hi, go, Lou, UPI, hoy]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[608, 948, 720, 400]</x>
+			<y>[114, 110, 114, 131]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273998706</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>your</typedWord>
+			<currentOutput>be discreet about your</currentOutput>
+		</touchPoints>
+		<suggestions>[your, yourself, you, yours, hour, tour, you're, you'd, four, YouTube, yourselves, tout, pour, house, gout, sour, young, bout]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>your</committedWords>
+		<suggestions>[order, experience, website, trip, company, work, new, email, experiences, project, life, job, mom, help, plans, situation, time, meeting]</suggestions>
+		<suggestions>[m, mom, meeting, mother, message, mail, Mom, new, name, notification, near, next, I'm, a, VM, DM, in, on, am]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[879]</x>
+			<y>[451]</y>
+			<pointer>[0]</pointer>
+			<startTime>273999087</startTime>
+			<time>[0]</time>
+			<typedWord>m</typedWord>
+			<currentOutput>be discreet about your m</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[879, 277]</x>
+			<y>[451, 130]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>273999363</startTime>
+			<time>[0, 0]</time>
+			<typedWord>me</typedWord>
+			<currentOutput>be discreet about your me</currentOutput>
+		</touchPoints>
+		<suggestions>[me, meeting, message, new, Mr, messages, memory, medical, members, method, near, next, menu, meet, media, member, mean, MD]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[879, 277, 283]</x>
+			<y>[451, 130, 130]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>273999503</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>mee</typedWord>
+			<currentOutput>be discreet about your mee</currentOutput>
+		</touchPoints>
+		<suggestions>[mee, meeting, new, message, meet, needs, meetings, knee, med, messages, need, near, see, more, meets, fee, Mrs, end, mer]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[879, 277, 283, 493]</x>
+			<y>[451, 130, 130, 120]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>273999844</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>meet</typedWord>
+			<currentOutput>be discreet about your meet</currentOutput>
+		</touchPoints>
+		<suggestions>[meet, meeting, meetings, feet, best, meets, next, new, meter, meat, most, met, meetup, very, need, nest, mercy, beer]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[879, 277, 283, 493, 832]</x>
+			<y>[451, 130, 130, 120, 110]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274000060</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>meeti</typedWord>
+			<currentOutput>be discreet about your meeti</currentOutput>
+		</touchPoints>
+		<suggestions>[meeti, meeting, meetings, meet, meets, meet I, merit, meetup, Merci, meetinghouse, meeting's, Merton, merci, Marti, merge, meetinghouses, meek, Meryl, Merton's]</suggestions>
+		<suggestions>[meeting, meetings, merging, nesting, melting, metering, meetinghouse, meeting's, meting, meetinghouses, meriting, nestings]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[879, 277, 283, 493, 832, 750, 508]</x>
+			<y>[451, 130, 130, 120, 110, 429, 264]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274000375</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>meeting</typedWord>
+			<currentOutput>be discreet about your meeting</currentOutput>
+		</touchPoints>
+	</imeData>
+	<isCanceled>0</isCanceled>
+	<editTextContent>be discreet about your meeting</editTextContent>
+	<submitTime>274000974</submitTime>
+</trial>
+<trial>
+	<blockNum>3</blockNum>
+	<trialNum>36</trialNum>
+	<stimulus>the rationale behind the decision</stimulus>
+	<imeData>
+		<suggestions>[I, the, hi, if, we, it, thank, please, you, this, I'm, thanks, dear, my, and, so, a, location]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[494]</x>
+			<y>[130]</y>
+			<pointer>[0]</pointer>
+			<startTime>274003242</startTime>
+			<time>[0]</time>
+			<typedWord>t</typedWord>
+			<currentOutput>t</currentOutput>
+		</touchPoints>
+		<suggestions>[t, the, thank, this, thanks, they, it, that, there, I, to, that's, then, you, these, time, tickets, at, my]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[494, 655, 292]</x>
+			<y>[130, 283, 90]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274003528</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>the</typedWord>
+			<currentOutput>the</currentOutput>
+		</touchPoints>
+		<suggestions>[the, they, there, then, these, she, three, this, Tue, for, thx, that, Thor, Thu, THR, tie, tee, bye]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>the</committedWords>
+		<suggestions>[following, only, first, second, other, price, problem, last, world, one, reason, power, library, living, force, sum, capital, rationale]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[373]</x>
+			<y>[133]</y>
+			<pointer>[0]</pointer>
+			<startTime>274004036</startTime>
+			<time>[0]</time>
+			<typedWord>r</typedWord>
+			<currentOutput>the r</currentOutput>
+		</touchPoints>
+		<suggestions>[r, reason, rationale, following, real, first, result, rule, rest, red, recipient, right, force, fact, thing, front, to, total, time]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[373, 83]</x>
+			<y>[133, 234]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274004269</startTime>
+			<time>[0, 0]</time>
+			<typedWord>ra</typedWord>
+			<currentOutput>the ra</currentOutput>
+		</touchPoints>
+		<suggestions>[ra, rationale, Ra, rate, range, radio, rain, race, rates, raw, rack, RAM, DA, rail, da, raid, rare, ratio, rank]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[373, 83, 472]</x>
+			<y>[133, 234, 131]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274004600</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>rat</typedWord>
+			<currentOutput>the rat</currentOutput>
+		</touchPoints>
+		<suggestions>[rat, rationale, rate, day, fat, fact, rates, eat, date, RAF, rear, data, far, car, ear, dates, ratio, database]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[373, 83, 472, 811]</x>
+			<y>[133, 234, 131, 115]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274004792</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>rati</typedWord>
+			<currentOutput>the rati</currentOutput>
+		</touchPoints>
+		<suggestions>[rati, rationale, ratio, rate, ratings, dark, rating, date, data, dating, eating, ratios, rational, day, Tati, ration, rato, rare, fat]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[373, 83, 472, 811, 918]</x>
+			<y>[133, 234, 131, 115, 97]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274004940</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>ratio</typedWord>
+			<currentOutput>the ratio</currentOutput>
+		</touchPoints>
+		<suggestions>[ratio, rationale, radio, patio, ratios, rational, ration, Dario, rationalize, rations, rationally, rationality, tattoo, rationalization, rationing, rationalizing, rationalized, rationalise]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[373, 83, 472, 811, 918, 741]</x>
+			<y>[133, 234, 131, 115, 97, 436]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274005223</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>ration</typedWord>
+			<currentOutput>the ration</currentOutput>
+		</touchPoints>
+		<suggestions>[ration, rationale, nation, station, ratio, rational, rationalize, rations, rationally, rationality, faction, national, rationalization, rationing, rationalizing, rationalized, ratios, rationalise]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[373, 83, 472, 811, 918, 741, 115]</x>
+			<y>[133, 234, 131, 115, 97, 436, 278]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274005600</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>rationa</typedWord>
+			<currentOutput>the rationa</currentOutput>
+		</touchPoints>
+		<suggestions>[rationa, rationale, rational, rations, rationalize, rationally, rationality, national, nation's, rationalization, rationalizing, nations, rationalized, rationalise, rationales, rationalist, stations, rationalizations, rationalism]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[373, 83, 472, 811, 918, 741, 115, 1027]</x>
+			<y>[133, 234, 131, 115, 97, 436, 278, 281]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274006004</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>rational</typedWord>
+			<currentOutput>the rational</currentOutput>
+		</touchPoints>
+		<suggestions>[rational, rationale, national, rationalize, rationally, rationality, rationalization, rationalizing, rationalized, rationalise, rationales, rationalist, rationalizations, rationalism, rationalisation, rationals, rationalised, rationalists]</suggestions>
+		<touchPoints>
+			<pointCount>9</pointCount>
+			<x>[373, 83, 472, 811, 918, 741, 115, 1027, 277]</x>
+			<y>[133, 234, 131, 115, 97, 436, 278, 281, 105]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274006667</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>rationale</typedWord>
+			<currentOutput>the rationale</currentOutput>
+		</touchPoints>
+		<suggestions>[rationale, rational, rationales, rationals, nationals, rationalize, rationally, rationality, rationalization, rationalizing, rationalized, rationalise, rationalist, rationalizations, rationalism, rationalisation, rationalised, rationalists]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>rationale</committedWords>
+		<suggestions>[for, behind, is, gold]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[638]</x>
+			<y>[444]</y>
+			<pointer>[0]</pointer>
+			<startTime>274007206</startTime>
+			<time>[0]</time>
+			<typedWord>b</typedWord>
+			<currentOutput>the rationale b</currentOutput>
+		</touchPoints>
+		<suggestions>[b, behind, be, but, by, been, back, best, because, before, being, better, both, I, a, bit, big, below, buy]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[638, 201]</x>
+			<y>[444, 88]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274007373</startTime>
+			<time>[0, 0]</time>
+			<typedWord>bw</typedWord>
+			<currentOutput>the rationale bw</currentOutput>
+		</touchPoints>
+		<suggestions>[bw, behind, be, been, best, because, before, being, better, below, between, believe, very, by, Best, we, me, beautiful, bed]</suggestions>
+		<functionKey>delete</functionKey>
+		<suggestions>[b, behind, be, but, by, been, back, best, because, before, being, better, both, I, a, bit, big, below, buy]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[638]</x>
+			<y>[444]</y>
+			<pointer>[0]</pointer>
+			<startTime>274007906</startTime>
+			<time>[0]</time>
+			<typedWord>b</typedWord>
+			<currentOutput>the rationale b</currentOutput>
+		</touchPoints>
+		<suggestions>[be, behind, been, best, because, before, being, better, below, between, believe, is, Best, by, we, me, beautiful, bed]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[638, 302]</x>
+			<y>[444, 127]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274008147</startTime>
+			<time>[0, 0]</time>
+			<typedWord>be</typedWord>
+			<currentOutput>the rationale be</currentOutput>
+		</touchPoints>
+		<suggestions>[beh, behind, be, behalf, behavior, Beth, beg, vehicle, behaviour, Ben, behave, vehicles, begin, beginning, behold, behavioral, behaviors, bed, behaved]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[638, 302, 659]</x>
+			<y>[444, 127, 261]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274008952</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>beh</typedWord>
+			<currentOutput>the rationale beh</currentOutput>
+		</touchPoints>
+		<suggestions>[behi, behind, vehicle, vehicles, begin, beginning, begins, beginner, beginners, be Hi, behinds, be hi, beginnings, vehicle's, be, bro, Benji, vehicular, beginner's]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[638, 302, 659, 829]</x>
+			<y>[444, 127, 261, 117]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274009159</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>behi</typedWord>
+			<currentOutput>the rationale behi</currentOutput>
+		</touchPoints>
+		<suggestions>[behin, behind, begin, beginning, begins, begun, beginner, beginners, brain, being, behinds, Benin, beginnings, began, beginner's, be him, vein, Bevin, beings]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[638, 302, 659, 829, 717]</x>
+			<y>[444, 127, 261, 117, 417]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274009357</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>behin</typedWord>
+			<currentOutput>the rationale behin</currentOutput>
+		</touchPoints>
+		<suggestions>[behind, begins, beyond, behinds, begin, behold, brains, behindhand, veins, begin's, bruins, beyonds, bronc, brins]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[638, 302, 659, 829, 717, 343]</x>
+			<y>[444, 127, 261, 117, 417, 283]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274009524</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>behind</typedWord>
+			<currentOutput>the rationale behind</currentOutput>
+		</touchPoints>
+		<functionKey>space</functionKey>
+		<committedWords>behind</committedWords>
+		<suggestions>[the, it, you, a, me, my, on, this, and, us, your, them, in, him, her, that, his, our]</suggestions>
+		<suggestions>[t, the, this, it, them, that, their, you, these, those, your, a, my, at, I, by, or, of, if]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[486]</x>
+			<y>[118]</y>
+			<pointer>[0]</pointer>
+			<startTime>274010373</startTime>
+			<time>[0]</time>
+			<typedWord>t</typedWord>
+			<currentOutput>the rationale behind t</currentOutput>
+		</touchPoints>
+		<suggestions>[th, the, this, them, that, their, these, those, to, TB, on, you, RJ, in, TN, it, TG, by, oh]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[486, 684]</x>
+			<y>[118, 257]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274010529</startTime>
+			<time>[0, 0]</time>
+			<typedWord>th</typedWord>
+			<currentOutput>the rationale behind th</currentOutput>
+		</touchPoints>
+		<suggestions>[the, them, their, these, this, she, Tue, for, re, tho, THR, tie, Thu, thx, thus, Thor, tee, toe]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[486, 684, 285]</x>
+			<y>[118, 257, 114]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274010677</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>the</typedWord>
+			<currentOutput>the rationale behind the</currentOutput>
+		</touchPoints>
+		<functionKey>space</functionKey>
+		<committedWords>the</committedWords>
+		<suggestions>[scenes, wheel, counter, front, bar, rear, house, door, dash, building, curtain, scene, times, camera, seat, back, wall, decision]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[341]</x>
+			<y>[309]</y>
+			<pointer>[0]</pointer>
+			<startTime>274011419</startTime>
+			<time>[0]</time>
+			<typedWord>d</typedWord>
+			<currentOutput>the rationale behind the d</currentOutput>
+		</touchPoints>
+		<suggestions>[d, door, dash, decision, desk, driver's, driver, front, doctor, day, document, first, details, following, fence, force, fact, future, final]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[341, 266]</x>
+			<y>[309, 93]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274011617</startTime>
+			<time>[0, 0]</time>
+			<typedWord>de</typedWord>
+			<currentOutput>the rationale behind the de</currentOutput>
+		</touchPoints>
+		<suggestions>[de, decision, desk, details, fence, dr, Dr, SE, Fe, due, use, CE, DD, DS, die, DW, XE, car]</suggestions>
+		<suggestions>[dec, Dec, decision, dev, deck, device, development, devil, decisions, December, decals, developer, Dev, decks, developers, decade, decline, decently, devices]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[341, 266, 458]</x>
+			<y>[309, 93, 476]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274012049</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>dec</typedWord>
+			<currentOutput>the rationale behind the dec</currentOutput>
+		</touchPoints>
+		<suggestions>[deci, decision, device, devil, deck, decisions, devices, Devi, decimal, deciding, devil's, deco, Deco, decided, demo, desk, decides, decide, decipher]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[341, 266, 458, 831]</x>
+			<y>[309, 93, 476, 68]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274012255</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>deci</typedWord>
+			<currentOutput>the rationale behind the deci</currentOutput>
+		</touchPoints>
+		<suggestions>[decis, decision, decisions, decks, second, devil, devil's, deciding, decisive, decision-making, Devi's, devise, devised, Denis, decided, decisively, decides, Davis, decision-makers]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[341, 266, 458, 831, 200]</x>
+			<y>[309, 93, 476, 68, 283]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274013086</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>decis</typedWord>
+			<currentOutput>the rationale behind the decis</currentOutput>
+		</touchPoints>
+		<suggestions>[decisi, decision, decisions, deciding, decisive, decision-making, decisively, decision-makers, devising, decisiveness, decision-maker, decisional, decisis, devise, decide, decode, Devi's, devils, secondo]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[341, 266, 458, 831, 200, 810]</x>
+			<y>[309, 93, 476, 68, 283, 111]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274013295</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>decisi</typedWord>
+			<currentOutput>the rationale behind the decisi</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[341, 266, 458, 831, 200, 810, 956]</x>
+			<y>[309, 93, 476, 68, 283, 111, 96]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274013426</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>decisio</typedWord>
+			<currentOutput>the rationale behind the decisio</currentOutput>
+		</touchPoints>
+		<suggestions>[decisio, decision, decisions, decision-making, decision-makers, decision-maker, decisional, deciduous, decisive, decisis, decisively, decisiveness]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[341, 266, 458, 831, 200, 810, 956, 772]</x>
+			<y>[309, 93, 476, 68, 283, 111, 96, 442]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274013682</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>decision</typedWord>
+			<currentOutput>the rationale behind the decision</currentOutput>
+		</touchPoints>
+		<suggestions>[decision, decisions, revision, decision-making, decision-makers, decision-maker, deviation, excision, decisional, derision, recision, excisions]</suggestions>
+	</imeData>
+	<isCanceled>0</isCanceled>
+	<editTextContent>the rationale behind the decision</editTextContent>
+	<submitTime>274014794</submitTime>
+</trial>
+<trial>
+	<blockNum>3</blockNum>
+	<trialNum>37</trialNum>
+	<stimulus>we accept personal checks</stimulus>
+	<imeData>
+		<suggestions>[I, the, hi, if, we, it, thank, please, you, this, I'm, thanks, dear, my, and, so, a, location]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[89]</x>
+			<y>[276]</y>
+			<pointer>[0]</pointer>
+			<startTime>274016448</startTime>
+			<time>[0]</time>
+			<typedWord>a</typedWord>
+			<currentOutput>a</currentOutput>
+		</touchPoints>
+		<suggestions>[a, and, as, all, also, are, any, I, at, after, so, she, send, sent, see, sorry, is, ha]</suggestions>
+		<functionKey>delete</functionKey>
+		<suggestions>[I, the, hi, if, we, it, thank, please, you, this, I'm, thanks, dear, my, and, so, a, location]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[143]</x>
+			<y>[128]</y>
+			<pointer>[0]</pointer>
+			<startTime>274017003</startTime>
+			<time>[0]</time>
+			<typedWord>w</typedWord>
+			<currentOutput>w</currentOutput>
+		</touchPoints>
+		<suggestions>[w, a, we, what, when, I, with, will, would, well, why, want, and, as, all, also, watch, are, any]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[143, 275]</x>
+			<y>[128, 96]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274017261</startTime>
+			<time>[0, 0]</time>
+			<typedWord>we</typedWord>
+			<currentOutput>we</currentOutput>
+		</touchPoints>
+		<suggestions>[we, well, we're, we'll, welcome, we've, he, as, send, were, went, sent, re, see, are, web, website, West]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[143, 275, 34]</x>
+			<y>[128, 96, 215]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274017509</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>wea</typedWord>
+			<currentOutput>wea</currentOutput>
+		</touchPoints>
+		<suggestions>[wea, we, weather, sea, wear, weapon, search, wearing, weapons, Sea, weak, see, web, Wes, wears, wealth, Weaver, yea, are]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[143, 275, 34, 420]</x>
+			<y>[128, 96, 215, 455]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274017942</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>weac</typedWord>
+			<currentOutput>weac</currentOutput>
+		</touchPoints>
+		<suggestions>[weac, we, wear, weak, Weaver, Sean, well, we AC, weave, wrap, sea, weaving, seat, away, wracking, wax, sec, weaves, seal]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[143, 275, 34, 420, 407]</x>
+			<y>[128, 96, 215, 455, 437]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274018110</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>weacc</typedWord>
+			<currentOutput>weacc</currentOutput>
+		</touchPoints>
+		<suggestions>[weacc, we ACC, search, weave, peace, Peace, wear, searching, reach, teach, Beach, beach, we act, weak, leave, searched, wrack, peach, searches]</suggestions>
+		<suggestions>[weacce, weave, peace, Peace, search, leave, Weaver, seance, weaves, we ace, we ACCA, we ACC's, we ACC, we acct, we acne, wears, we cw, Weaver's, wear]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[143, 275, 34, 420, 407, 220]</x>
+			<y>[128, 96, 215, 455, 437, 118]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274018624</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>weacce</typedWord>
+			<currentOutput>weacce</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[143, 275, 34, 420, 407, 220, 1078]</x>
+			<y>[128, 96, 215, 455, 437, 118, 87]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274018946</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>weaccep</typedWord>
+			<currentOutput>weaccep</currentOutput>
+		</touchPoints>
+		<suggestions>[weaccep, we accel, Weaver, weave, reaccepted, reaccept, weaves, reaccepting, we CEP, weaved, wracked, we CEO, weasel, we Accel, seascape, we cep, seascapes, we axel, weavers]</suggestions>
+		<suggestions>[weaccept, we accept, reaccept, we accent, reaccepted, Weaver, reaccepting, Weaver's, Weaverville, weaved]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[143, 275, 34, 420, 407, 220, 1078, 476]</x>
+			<y>[128, 96, 215, 455, 437, 118, 87, 115]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274019205</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>weaccept</typedWord>
+			<currentOutput>weaccept</currentOutput>
+		</touchPoints>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[143, 275, 34, 420, 407, 220, 1078]</x>
+			<y>[128, 96, 215, 455, 437, 118, 87]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274019842</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>weaccep</typedWord>
+			<currentOutput>weaccep</currentOutput>
+		</touchPoints>
+		<suggestions>[weaccep, we accel, Weaver, weave, reaccepted, reaccept, weaves, reaccepting, we CEP, weaved, wracked, we CEO, weasel, we Accel, seascape, we cep, seascapes, we axel, weavers]</suggestions>
+		<functionKey>delete</functionKey>
+		<functionKey>delete</functionKey>
+		<suggestions>[weacc, we ACC, search, weave, peace, Peace, wear, searching, reach, teach, Beach, beach, we act, weak, leave, searched, wrack, peach, searches]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[143, 275, 34, 420, 407]</x>
+			<y>[128, 96, 215, 455, 437]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274020111</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>weacc</typedWord>
+			<currentOutput>weacc</currentOutput>
+		</touchPoints>
+		<functionKey>delete</functionKey>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[143, 275, 34]</x>
+			<y>[128, 96, 215]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274020367</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>wea</typedWord>
+			<currentOutput>wea</currentOutput>
+		</touchPoints>
+		<suggestions>[wea, we, weather, sea, wear, weapon, search, wearing, weapons, Sea, weak, see, web, Wes, wears, wealth, Weaver, yea, are]</suggestions>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[143, 275]</x>
+			<y>[128, 96]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274020509</startTime>
+			<time>[0, 0]</time>
+			<typedWord>we</typedWord>
+			<currentOutput>we</currentOutput>
+		</touchPoints>
+		<suggestions>[we, well, we're, we'll, welcome, we've, he, as, send, were, went, sent, re, see, are, web, website, West]</suggestions>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[143]</x>
+			<y>[128]</y>
+			<pointer>[0]</pointer>
+			<startTime>274020831</startTime>
+			<time>[0]</time>
+			<typedWord>w</typedWord>
+			<currentOutput>w</currentOutput>
+		</touchPoints>
+		<suggestions>[w, a, we, what, when, I, with, will, would, well, why, want, and, as, all, also, watch, are, any]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[143, 257]</x>
+			<y>[128, 122]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274021587</startTime>
+			<time>[0, 0]</time>
+			<typedWord>we</typedWord>
+			<currentOutput>we</currentOutput>
+		</touchPoints>
+		<suggestions>[we, well, as, we're, we'll, welcome, we've, he, send, were, went, sent, re, see, are, web, West, website]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>we</committedWords>
+		<suggestions>[are, have, will, would, can, had, need, were, also, look, do, should, just, don't, hope, did, could, want]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[95]</x>
+			<y>[271]</y>
+			<pointer>[0]</pointer>
+			<startTime>274022126</startTime>
+			<time>[0]</time>
+			<typedWord>a</typedWord>
+			<currentOutput>we a</currentOutput>
+		</touchPoints>
+		<suggestions>[a, are, also, all, accept, appreciate, ask, already, always, accepted, actually, aren't, apologize, assure, should, still, shall, saw]</suggestions>
+		<suggestions>[ac, AC, accept, accepted, actually, at, A-C, SC, ax, CA, an, am, can, had, as, Mac, tax, fax, a]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[95, 406]</x>
+			<y>[271, 428]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274023024</startTime>
+			<time>[0, 0]</time>
+			<typedWord>ac</typedWord>
+			<currentOutput>we ac</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[95, 406, 400]</x>
+			<y>[271, 428, 408]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274023173</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>acc</typedWord>
+			<currentOutput>we acc</currentOutput>
+		</touchPoints>
+		<suggestions>[acc, ACC, accept, accepted, account, access, according, accidentally, accounts, accomplish, can, accurate, accessories, accident, accordingly, accounting, accommodation, accuracy, acceptable]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[95, 406, 400, 270]</x>
+			<y>[271, 428, 408, 138]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274023756</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>acce</typedWord>
+			<currentOutput>we acce</currentOutput>
+		</touchPoints>
+		<suggestions>[acce, accept, accepted, access, accessories, acceptable, accepting, acceptance, accessible, accepts, acceleration, accessing, accent, accessed, accessory, accelerator, accelerate, accents, accelerated]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[95, 406, 400, 270, 1044]</x>
+			<y>[271, 428, 408, 138, 112]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274024095</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>accep</typedWord>
+			<currentOutput>we accep</currentOutput>
+		</touchPoints>
+		<suggestions>[accep, accept, accepted, acceptable, accepting, acceptance, accepts, accel, acceptances, acceptably, acceleration, acceptability, acceptor, acceptation, accelerator, accepter, accelerate, access, accelerated]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[95, 406, 400, 270, 1044, 457]</x>
+			<y>[271, 428, 408, 138, 112, 118]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274024293</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>accept</typedWord>
+			<currentOutput>we accept</currentOutput>
+		</touchPoints>
+		<suggestions>[accept, accepted, acceptable, accepting, acceptance, accepts, except, acceptances, accent, acceptably, acceptability, acceptor, acceptation, accepter, acceptors, acceptant, acceptations, acceptees]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>accept</committedWords>
+		<suggestions>[no, Visa, cash, the, all, my, liability, this, it, any, that, a, your, responsibility, our, personal, and, credit]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[1027]</x>
+			<y>[109]</y>
+			<pointer>[0]</pointer>
+			<startTime>274025308</startTime>
+			<time>[0]</time>
+			<typedWord>p</typedWord>
+			<currentOutput>we accept p</currentOutput>
+		</touchPoints>
+		<suggestions>[p, no, personal, payment, payments, our, or, PayPal, pets, a, up, to, only, I, online, offers, orders, so, do]</suggestions>
+		<suggestions>[pe, PE, personal, or, pets, people, me, per, person, be, perfect, PW, perhaps, performance, we, period, one, Peter, personally]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[1027, 233]</x>
+			<y>[109, 84]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274025679</startTime>
+			<time>[0, 0]</time>
+			<typedWord>pe</typedWord>
+			<currentOutput>we accept pe</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[1027, 233, 408]</x>
+			<y>[109, 84, 118]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274025955</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>per</typedWord>
+			<currentOutput>we accept per</currentOutput>
+		</touchPoints>
+		<suggestions>[per, personal, pet, let, person, her, our, perfect, perhaps, performance, period, or, personally, perfectly, permission, perform, over, permanent]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[1027, 233, 408, 171]</x>
+			<y>[109, 84, 118, 275]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274026254</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>pers</typedWord>
+			<currentOutput>we accept pers</currentOutput>
+		</touchPoints>
+		<suggestions>[pers, personal, pets, person, personally, let's, personality, perspective, persons, per, PETA, personnel, Pera, person's, lets, persistent, persona, personalized, personalities]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[1027, 233, 408, 171, 949]</x>
+			<y>[109, 84, 118, 275, 122]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274026427</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>perso</typedWord>
+			<currentOutput>we accept perso</currentOutput>
+		</touchPoints>
+		<suggestions>[perso, personal, person, personally, pets, personality, persons, personnel, perspective, person's, personalized, persona, personalities, pedal, personable, perspectives, personalize, personalised, petal]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[1027, 233, 408, 171, 949, 756]</x>
+			<y>[109, 84, 118, 275, 122, 437]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274026802</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>person</typedWord>
+			<currentOutput>we accept person</currentOutput>
+		</touchPoints>
+		<suggestions>[person, personal, personally, personality, persons, personnel, person's, personalized, persona, personalities, personable, Pearson, personalize, pets on, personalised, personas, personalization, personals]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[1027, 233, 408, 171, 949, 756, 56]</x>
+			<y>[109, 84, 118, 275, 122, 437, 235]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274026991</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>persona</typedWord>
+			<currentOutput>we accept persona</currentOutput>
+		</touchPoints>
+		<suggestions>[persona, personal, personally, personality, person, persons, personalized, personalities, person's, personable, personalize, personalised, person a, personas, personalization, personals, personalise, personalizing]</suggestions>
+		<suggestions>[personal, personally, personality, personalized, personalities, personalize, personalised, personalization, personals, personalise, personalizing, personalisation, persona, personalty, personalising, personalizes, personality's, personalizations]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[1027, 233, 408, 171, 949, 756, 56, 990]</x>
+			<y>[109, 84, 118, 275, 122, 437, 235, 238]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274027115</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>personal</typedWord>
+			<currentOutput>we accept personal</currentOutput>
+		</touchPoints>
+		<functionKey>space</functionKey>
+		<committedWords>personal</committedWords>
+		<suggestions>[checks, email, and, information, experience, preference, trainer, opinion, magazine, use, account, interview, statement, assistant, details, training, life, message]</suggestions>
+		<suggestions>[c, checks, cell, choice, check, care, contact, computer, circumstances, views, I, a, PC, DC, TV, NC, BC, AC, SC]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[466]</x>
+			<y>[485]</y>
+			<pointer>[0]</pointer>
+			<startTime>274027839</startTime>
+			<time>[0]</time>
+			<typedWord>c</typedWord>
+			<currentOutput>we accept personal c</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[466, 675]</x>
+			<y>[485, 274]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274028053</startTime>
+			<time>[0, 0]</time>
+			<typedWord>ch</typedWord>
+			<currentOutput>we accept personal ch</currentOutput>
+		</touchPoints>
+		<suggestions>[ch, checks, CH, choice, check, CB, VH, can, oh, CG, in, on, VB, CA, CV, ah, an, pH, VG]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[466, 675, 294]</x>
+			<y>[485, 274, 97]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274028304</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>che</typedWord>
+			<currentOutput>we accept personal che</currentOutput>
+		</touchPoints>
+		<suggestions>[che, checks, check, chef, checking, cheque, the, checked, cheap, she, cheers, cheaper, Chris, chemistry, chest, car, cheese, Chevy]</suggestions>
+		<suggestions>[chec, checks, check, checking, checked, chef, Chev, check-in, checkout, checklist, checker, Chevy, checkpoint, checkup, Chevrolet, checksum, check-out, checkbook, checkers]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[466, 675, 294, 441]</x>
+			<y>[485, 274, 97, 447]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274028653</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>chec</typedWord>
+			<currentOutput>we accept personal chec</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[466, 675, 294, 441, 882]</x>
+			<y>[485, 274, 97, 447, 290]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274028810</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>check</typedWord>
+			<currentOutput>we accept personal check</currentOutput>
+		</touchPoints>
+		<suggestions>[check, checks, checking, checked, check-in, checkout, checklist, checker, checkpoint, checkup, checksum, check-out, checkbook, checkers, checkered, checkmate, checkpoints, checklists]</suggestions>
+		<suggestions>[checks, check, check a, checked, checksum, checksums, chicks, cheeks, check s, checksumming, checkable, checksummed, chucks, chocks, e-checks, checky]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[466, 675, 294, 441, 882, 190]</x>
+			<y>[485, 274, 97, 447, 290, 265]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274028975</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>checks</typedWord>
+			<currentOutput>we accept personal checks</currentOutput>
+		</touchPoints>
+	</imeData>
+	<isCanceled>0</isCanceled>
+	<editTextContent>we accept personal checks</editTextContent>
+	<submitTime>274029722</submitTime>
+</trial>
+<trial>
+	<blockNum>3</blockNum>
+	<trialNum>38</trialNum>
+	<stimulus>protect your environment</stimulus>
+	<imeData>
+		<suggestions>[I, the, hi, if, we, it, thank, please, you, this, I'm, thanks, dear, my, and, so, a, location]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[1079]</x>
+			<y>[97]</y>
+			<pointer>[0]</pointer>
+			<startTime>274030969</startTime>
+			<time>[0]</time>
+			<typedWord>p</typedWord>
+			<currentOutput>p</currentOutput>
+		</touchPoints>
+		<suggestions>[p, please, I, page, protect, play, a, prayer, physics, phrase, up, NP, so, op, HP, on, or, IP, one]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[1079, 354]</x>
+			<y>[97, 117]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274031310</startTime>
+			<time>[0, 0]</time>
+			<typedWord>pr</typedWord>
+			<currentOutput>pr</currentOutput>
+		</touchPoints>
+		<suggestions>[pr, PR, or, protect, pretty, prayer, price, problem, we, perhaps, private, people, print, provide, PE, project, product, profile, he]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[1079, 354, 926]</x>
+			<y>[97, 117, 108]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274031766</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>pro</typedWord>
+			<currentOutput>pro</currentOutput>
+		</touchPoints>
+		<suggestions>[pro, protect, problem, programs, people, provide, project, product, profile, professional, probably, problems, properly, provided, property, prohibited, Prof, products]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[1079, 354, 926, 496]</x>
+			<y>[97, 117, 108, 149]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274032041</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>prot</typedWord>
+			<currentOutput>prot</currentOutput>
+		</touchPoints>
+		<suggestions>[prot, protect, Prof, prof, programs, protection, profile, protected, professional, professor, port, protein, Port, programming, program, progress, protocol, prototype, proton]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[1079, 354, 926, 496, 274]</x>
+			<y>[97, 117, 108, 149, 103]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274032421</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>prote</typedWord>
+			<currentOutput>prote</currentOutput>
+		</touchPoints>
+		<suggestions>[prote, protect, protection, protected, professional, professor, protein, protector, protective, protecting, professionals, protest, protects, proteins, protege, wrote, price, protectors, professionally]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[1079, 354, 926, 496, 274, 430]</x>
+			<y>[97, 117, 108, 149, 103, 451]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274032754</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>protec</typedWord>
+			<currentOutput>protec</currentOutput>
+		</touchPoints>
+		<suggestions>[protec, protect, protection, protected, protector, protective, protecting, protects, protectors, protections, project, projects, protectorate, protectorates, protectively, protectionism, protectionist, protectiveness, protein]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[1079, 354, 926, 496, 274, 430, 481]</x>
+			<y>[97, 117, 108, 149, 103, 451, 135]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274033060</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>protect</typedWord>
+			<currentOutput>protect</currentOutput>
+		</touchPoints>
+		<suggestions>[protect, protection, protected, project, protector, protective, protecting, protects, protectors, protections, perfect, protest, projects, protectorate, protectively, protectorates, protectiveness, protectionism]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>protect</committedWords>
+		<suggestions>[the, against, your, you, it, our, my, them, yourself, and, their, her, us, me, themselves, from, his, myself]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[630]</x>
+			<y>[108]</y>
+			<pointer>[0]</pointer>
+			<startTime>274033551</startTime>
+			<time>[0]</time>
+			<typedWord>y</typedWord>
+			<currentOutput>protect y</currentOutput>
+		</touchPoints>
+		<suggestions>[y, your, you, yourself, my, us, I, by, it, u, a, at, NY, KY, EU, au, oh, hi, sy]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[630, 925]</x>
+			<y>[108, 116]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274033742</startTime>
+			<time>[0, 0]</time>
+			<typedWord>yo</typedWord>
+			<currentOutput>protect yo</currentOutput>
+		</touchPoints>
+		<suggestions>[yo, your, you, yourself, to, up, go, us, hi, so, do, UK, no, it, Hi, HP, who, two]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[630, 925, 722]</x>
+			<y>[108, 116, 117]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274033931</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>you</typedWord>
+			<currentOutput>protect you</currentOutput>
+		</touchPoints>
+		<suggestions>[you, your, yourself, to, up, how, GPU, hoi, toy, yo, too, go, Lou, yup, top, UPI, hot, hoy]</suggestions>
+		<suggestions>[your, yourself, you, hour, you're, yours, tour, you'd, YouTube, yourselves, four, tout, pour, house, sour, jour, bout, gout]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[630, 925, 722, 399]</x>
+			<y>[108, 116, 117, 122]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274034082</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>your</typedWord>
+			<currentOutput>protect your</currentOutput>
+		</touchPoints>
+		<functionKey>space</functionKey>
+		<committedWords>your</committedWords>
+		<suggestions>[privacy, sensitive, personal, brand, interests, investment, email, help, time, environment, own, website, account, business, message, reply, company, information]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[249]</x>
+			<y>[110]</y>
+			<pointer>[0]</pointer>
+			<startTime>274034648</startTime>
+			<time>[0]</time>
+			<typedWord>e</typedWord>
+			<currentOutput>protect your e</currentOutput>
+		</touchPoints>
+		<suggestions>[e, email, environment, earliest, website, end, work, way, he, be, a, we, de, s, me, ad, re, ID, I]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[249, 756]</x>
+			<y>[110, 452]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274034887</startTime>
+			<time>[0, 0]</time>
+			<typedWord>en</typedWord>
+			<currentOutput>protect your en</currentOutput>
+		</touchPoints>
+		<suggestions>[en, environment, email, end, own, engine, entire, energy, entry, English, enjoying, em, enjoy, web, engineer, engines, ended, enter]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[249, 756, 545]</x>
+			<y>[110, 452, 447]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274035369</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>env</typedWord>
+			<currentOutput>protect your env</currentOutput>
+		</touchPoints>
+		<suggestions>[env, environment, environmental, end, envelope, encouragement, encouraging, environments, envelopes, web, new, enclosed, envy, envision, encourage, en, envious, envisioned, envoy]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[249, 756, 545, 845]</x>
+			<y>[110, 452, 447, 103]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274035718</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>envi</typedWord>
+			<currentOutput>protect your envi</currentOutput>
+		</touchPoints>
+		<suggestions>[envi, environment, environmental, encouragement, environments, encouraging, envision, envious, envisioned, neck, environmentally, encourage, envisioning, envisage, envoy, encounter, encountered, envisaged, environs]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[249, 756, 545, 845, 344]</x>
+			<y>[110, 452, 447, 103, 106]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274036140</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>envir</typedWord>
+			<currentOutput>protect your envir</currentOutput>
+		</touchPoints>
+		<suggestions>[envir, environment, environmental, environments, environmentally, environs, environ, environmentalist, environmentalists, encore, envied, environmentalism, Debbie, envies, never, Evie, envoy, envier, encode]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[249, 756, 545, 845, 344, 957]</x>
+			<y>[110, 452, 447, 103, 106, 105]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274036282</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>enviro</typedWord>
+			<currentOutput>protect your enviro</currentOutput>
+		</touchPoints>
+		<suggestions>[enviro, environment, environmental, environments, environmentally, environs, environ, environmentalist, environmentalists, environmentalism, encore, envied, environed, envies, envious, envier, envoi, invito, enviously]</suggestions>
+		<suggestions>[environ, environment, environmental, environments, environmentally, environs, environmentalist, environmentalists, environmentalism, environed]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[249, 756, 545, 845, 344, 957, 793]</x>
+			<y>[110, 452, 447, 103, 106, 105, 429]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274036921</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>environ</typedWord>
+			<currentOutput>protect your environ</currentOutput>
+		</touchPoints>
+		<suggestions>[environm, environment, environmental, environments, environmentally, environmentalist, environmentalists, environmentalism, environs, environ, environed]</suggestions>
+		<touchPoints>
+			<pointCount>8</pointCount>
+			<x>[249, 756, 545, 845, 344, 957, 793, 886]</x>
+			<y>[110, 452, 447, 103, 106, 105, 429, 442]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274037122</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>environm</typedWord>
+			<currentOutput>protect your environm</currentOutput>
+		</touchPoints>
+		<suggestions>[environme, environment, environmental, environments, environmentally, environmentalist, environmentalists, environmentalism, environs, environed]</suggestions>
+		<touchPoints>
+			<pointCount>9</pointCount>
+			<x>[249, 756, 545, 845, 344, 957, 793, 886, 261]</x>
+			<y>[110, 452, 447, 103, 106, 105, 429, 442, 116]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274037286</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>environme</typedWord>
+			<currentOutput>protect your environme</currentOutput>
+		</touchPoints>
+		<suggestions>[environmen, environment, environmental, environments, environmentally, environmentalist, environmentalists, environmentalism]</suggestions>
+		<touchPoints>
+			<pointCount>10</pointCount>
+			<x>[249, 756, 545, 845, 344, 957, 793, 886, 261, 748]</x>
+			<y>[110, 452, 447, 103, 106, 105, 429, 442, 116, 435]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274037410</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>environmen</typedWord>
+			<currentOutput>protect your environmen</currentOutput>
+		</touchPoints>
+		<suggestions>[environment, environmental, environments, environmentally, environmentalist, environmentalists, environmentalism]</suggestions>
+		<touchPoints>
+			<pointCount>11</pointCount>
+			<x>[249, 756, 545, 845, 344, 957, 793, 886, 261, 748, 504]</x>
+			<y>[110, 452, 447, 103, 106, 105, 429, 442, 116, 435, 161]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274037601</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>environment</typedWord>
+			<currentOutput>protect your environment</currentOutput>
+		</touchPoints>
+	</imeData>
+	<isCanceled>0</isCanceled>
+	<editTextContent>protect your environment</editTextContent>
+	<submitTime>274038695</submitTime>
+</trial>
+<trial>
+	<blockNum>3</blockNum>
+	<trialNum>39</trialNum>
+	<stimulus>just what the doctor ordered</stimulus>
+	<imeData>
+		<suggestions>[I, the, hi, if, we, it, thank, please, you, this, I'm, thanks, dear, my, and, so, a, location]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[783]</x>
+			<y>[311]</y>
+			<pointer>[0]</pointer>
+			<startTime>274042617</startTime>
+			<time>[0]</time>
+			<typedWord>j</typedWord>
+			<currentOutput>j</currentOutput>
+		</touchPoints>
+		<suggestions>[j, just, I, no, not, now, in, kind, a, never, on, junior, jump, I'm, join, an, neither, job, joy]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[783, 721]</x>
+			<y>[311, 108]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274043379</startTime>
+			<time>[0, 0]</time>
+			<typedWord>ju</typedWord>
+			<currentOutput>ju</currentOutput>
+		</touchPoints>
+		<suggestions>[ju, hi, just, my, Hi, Judy, junior, jump, in, nu, Julie, June, Justin, by, mi, Julia, July, no, mu]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[783, 721, 188]</x>
+			<y>[311, 108, 289]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274043664</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>jus</typedWord>
+			<currentOutput>jus</currentOutput>
+		</touchPoints>
+		<suggestions>[jus, just, his, Justin, this, bus, must, Kia, music, justice, Justine, Mia, NUS, kia, hi, justify, but, Jud]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[783, 721, 188, 439]</x>
+			<y>[311, 108, 289, 112]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274043993</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>just</typedWord>
+			<currentOutput>just</currentOutput>
+		</touchPoints>
+		<suggestions>[just, must, Justin, Judy, Justine, justice, bust, mist, justify, Justin's, Justice, jist, list, justified, Justus, justification, nuts, dust]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>just</committedWords>
+		<suggestions>[a, wanted, let, to, got, wondering, want, like, checking, in, curious, thought, my, so, for, because, make, need]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[166]</x>
+			<y>[108]</y>
+			<pointer>[0]</pointer>
+			<startTime>274044990</startTime>
+			<time>[0]</time>
+			<typedWord>w</typedWord>
+			<currentOutput>just w</currentOutput>
+		</touchPoints>
+		<suggestions>[w, a, wanted, wondering, want, what, waiting, wait, when, wondered, watched, be, email, as, me, I, s, re, is]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[166, 646]</x>
+			<y>[108, 308]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274045231</startTime>
+			<time>[0, 0]</time>
+			<typedWord>wh</typedWord>
+			<currentOutput>just wh</currentOutput>
+		</touchPoints>
+		<suggestions>[wh, what, when, an, who, be, where, why, a, which, whether, white, while, what's, whole, whenever, whatever, wheels, wheel]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[166, 646, 74]</x>
+			<y>[108, 308, 284]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274045472</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>wha</typedWord>
+			<currentOutput>just wha</currentOutput>
+		</touchPoints>
+		<suggestions>[wha, what, what's, whatever, who, why, whatsoever, whale, whatnot, eBay, WhatsApp, whack, Eva, was, whales, as, wah, Wharton, aha]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[166, 646, 74, 483]</x>
+			<y>[108, 308, 284, 93]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274045713</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>what</typedWord>
+			<currentOutput>just what</currentOutput>
+		</touchPoints>
+		<suggestions>[what, want, that, what's, whatever, whatsoever, eBay, chat, beat, eat, wear, way, heat, whatnot, wheat, hear, WhatsApp, why]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>what</committedWords>
+		<suggestions>[I, the, we, you, is, do, are, to, a, it, they, time, he, about, was, would, I'm, kind]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[490]</x>
+			<y>[142]</y>
+			<pointer>[0]</pointer>
+			<startTime>274046311</startTime>
+			<time>[0]</time>
+			<typedWord>t</typedWord>
+			<currentOutput>just what t</currentOutput>
+		</touchPoints>
+		<suggestions>[t, the, I, to, they, time, you, it, this, that, type, they're, their, these, a, your, you're, those, if]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[490, 658]</x>
+			<y>[142, 274]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274046476</startTime>
+			<time>[0, 0]</time>
+			<typedWord>th</typedWord>
+			<currentOutput>just what th</currentOutput>
+		</touchPoints>
+		<suggestions>[th, the, they, this, that, their, they're, these, those, to, TB, GB, TG, TV, oh, GH, go, TN, ya]</suggestions>
+		<suggestions>[the, they, their, they're, these, she, this, age, Tue, tube, tie, for, tho, THR, che, Thu, fee, thx]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[490, 658, 276]</x>
+			<y>[142, 274, 67]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274046608</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>the</typedWord>
+			<currentOutput>just what the</currentOutput>
+		</touchPoints>
+		<functionKey>space</functionKey>
+		<committedWords>the</committedWords>
+		<suggestions>[hell, problem, heck, next, best, cost, issue, difference, other, doctor, status, price, future, deal, plan, same, actual, process]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[351]</x>
+			<y>[290]</y>
+			<pointer>[0]</pointer>
+			<startTime>274047164</startTime>
+			<time>[0]</time>
+			<typedWord>d</typedWord>
+			<currentOutput>just what the d</currentOutput>
+		</touchPoints>
+		<suggestions>[d, difference, doctor, deal, decision, differences, future, document, dealer, final, day, first, following, force, fact, fuss, front, ad, CD]</suggestions>
+		<suggestions>[do, doctor, document, following, force, door, documents, dog, doors, double, domain, download, dogs, doc, down, DL, so, to]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[351, 931]</x>
+			<y>[290, 129]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274047322</startTime>
+			<time>[0, 0]</time>
+			<typedWord>do</typedWord>
+			<currentOutput>just what the do</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[351, 931, 499]</x>
+			<y>[290, 129, 473]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274047513</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>dov</typedWord>
+			<currentOutput>just what the dov</currentOutput>
+		</touchPoints>
+		<suggestions>[dov, doctor, doc, document, documents, documentation, doctors, docs, dock, doctor's, dog, documentary, docks, do, docket, doctrine, dovetail, docking, div]</suggestions>
+		<functionKey>delete</functionKey>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[351, 931]</x>
+			<y>[290, 129]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274048062</startTime>
+			<time>[0, 0]</time>
+			<typedWord>do</typedWord>
+			<currentOutput>just what the do</currentOutput>
+		</touchPoints>
+		<suggestions>[do, doctor, document, following, force, door, documents, dog, doors, double, domain, download, dogs, doc, down, DL, so, to]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[351, 931, 409]</x>
+			<y>[290, 129, 443]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274048184</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>doc</typedWord>
+			<currentOutput>just what the doc</currentOutput>
+		</touchPoints>
+		<suggestions>[doc, doctor, document, documents, documentation, docs, doctors, dock, doctor's, focus, documentary, fix, docks, docket, doctrine, docking, dog, focal]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[351, 931, 409, 473]</x>
+			<y>[290, 129, 443, 136]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274048983</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>doct</typedWord>
+			<currentOutput>just what the doct</currentOutput>
+		</touchPoints>
+		<suggestions>[doct, doctor, doctors, doctor's, fact, doctrine, doc, door, docs, dock, dictionary, dot, font, doctoral, foot, duct, dog, doctorate, four]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[351, 931, 409, 473, 943]</x>
+			<y>[290, 129, 443, 136, 91]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274049364</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>docto</typedWord>
+			<currentOutput>just what the docto</currentOutput>
+		</touchPoints>
+		<suggestions>[docto, doctor, doctors, doctor's, doc to, doctoral, doctorate, doctored, doctoring, dictionary, doctorates, dock, Doctorow, xoxo, focal, facto, doctorial, dictionaries, fork]</suggestions>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[351, 931, 409, 473, 943, 371]</x>
+			<y>[290, 129, 443, 136, 91, 121]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274049497</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>doctor</typedWord>
+			<currentOutput>just what the doctor</currentOutput>
+		</touchPoints>
+		<suggestions>[doctor, doctors, doctor's, doctoral, doctorate, factor, doctored, doctoring, doctorates, Doctorow, doctorial, forgot, doc tor, doc toe, doc tot, doc tod, cocos]</suggestions>
+		<functionKey>space</functionKey>
+		<committedWords>doctor</committedWords>
+		<suggestions>[said, and, to, is, in, for, who, ordered, has, about, told, on, that, I, or, of, appointment, but]</suggestions>
+		<touchPoints>
+			<pointCount>1</pointCount>
+			<x>[934]</x>
+			<y>[108]</y>
+			<pointer>[0]</pointer>
+			<startTime>274050393</startTime>
+			<time>[0]</time>
+			<typedWord>o</typedWord>
+			<currentOutput>just what the doctor o</currentOutput>
+		</touchPoints>
+		<suggestions>[o, I, ordered, on, or, of, to, so, olds, prescribed, put, do, prefer, no, please, go, a, up, hi]</suggestions>
+		<touchPoints>
+			<pointCount>2</pointCount>
+			<x>[934, 373]</x>
+			<y>[108, 117]</y>
+			<pointer>[0, 0]</pointer>
+			<startTime>274050684</startTime>
+			<time>[0, 0]</time>
+			<typedWord>or</typedWord>
+			<currentOutput>just what the doctor or</currentOutput>
+		</touchPoints>
+		<suggestions>[or, ordered, of, for, prescribed, to, it, if, prefer, on, our, order, original, PR, not, one, is, Dr]</suggestions>
+		<touchPoints>
+			<pointCount>3</pointCount>
+			<x>[934, 373, 328]</x>
+			<y>[108, 117, 274]</y>
+			<pointer>[0, 0, 0]</pointer>
+			<startTime>274051298</startTime>
+			<time>[0, 0, 0]</time>
+			<typedWord>ord</typedWord>
+			<currentOutput>just what the doctor ord</currentOutput>
+		</touchPoints>
+		<suggestions>[ord, ordered, or, order, off, of, odd, orders, word, Ford, ordering, Lord, Ltd, rod, old, it's, for, ordinary, led]</suggestions>
+		<touchPoints>
+			<pointCount>4</pointCount>
+			<x>[934, 373, 328, 276]</x>
+			<y>[108, 117, 274, 117]</y>
+			<pointer>[0, 0, 0, 0]</pointer>
+			<startTime>274051531</startTime>
+			<time>[0, 0, 0, 0]</time>
+			<typedWord>orde</typedWord>
+			<currentOutput>just what the doctor orde</currentOutput>
+		</touchPoints>
+		<suggestions>[orde, ordered, order, orders, ordering, olds, rode, ordeal, ride, worse, horde, words, horse, pride, offer, orderly, rose, Rose, odds]</suggestions>
+		<suggestions>[order, ordered, prefer, orders, offer, ordering, border, other, older, orderly, rider, offered, Peder, offers, odder, offering, order's, oder]</suggestions>
+		<touchPoints>
+			<pointCount>5</pointCount>
+			<x>[934, 373, 328, 276, 361]</x>
+			<y>[108, 117, 274, 117, 124]</y>
+			<pointer>[0, 0, 0, 0, 0]</pointer>
+			<startTime>274051721</startTime>
+			<time>[0, 0, 0, 0, 0]</time>
+			<typedWord>order</typedWord>
+			<currentOutput>just what the doctor order</currentOutput>
+		</touchPoints>
+		<touchPoints>
+			<pointCount>6</pointCount>
+			<x>[934, 373, 328, 276, 361, 261]</x>
+			<y>[108, 117, 274, 117, 124, 113]</y>
+			<pointer>[0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274051971</startTime>
+			<time>[0, 0, 0, 0, 0, 0]</time>
+			<typedWord>ordere</typedWord>
+			<currentOutput>just what the doctor ordere</currentOutput>
+		</touchPoints>
+		<suggestions>[ordere, ordered, orders, order, prefer, offers, offered, order's, borders, orderer, others, ordering, orderers, riders, prefers, orderly, offerer, border's, order s]</suggestions>
+		<suggestions>[ordered, offered, orders, bordered, orderers, orderer, offeree, offerer, offerers, offerees, offerer's]</suggestions>
+		<touchPoints>
+			<pointCount>7</pointCount>
+			<x>[934, 373, 328, 276, 361, 261, 287]</x>
+			<y>[108, 117, 274, 117, 124, 113, 255]</y>
+			<pointer>[0, 0, 0, 0, 0, 0, 0]</pointer>
+			<startTime>274052169</startTime>
+			<time>[0, 0, 0, 0, 0, 0, 0]</time>
+			<typedWord>ordered</typedWord>
+			<currentOutput>just what the doctor ordered</currentOutput>
+		</touchPoints>
+	</imeData>
+	<isCanceled>0</isCanceled>
+	<editTextContent>just what the doctor ordered</editTextContent>
+	<submitTime>274053305</submitTime>
+</trial>
+</root>
